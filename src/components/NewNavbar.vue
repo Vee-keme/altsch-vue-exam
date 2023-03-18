@@ -30,7 +30,7 @@
           >Repos</router-link
         >
       </li>
-      <Button>Dark/Light Mode</Button>
+      <Button>Contact</Button>
     </ul>
   </div>
   <!-- <router-view></router-view> -->
