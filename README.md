@@ -1,29 +1,25 @@
-# altschool-third-semester-exam
+# Altschool Third Semester Exam
 
-This template should help get you started developing with Vue 3 in Vite.
+![ ALTSCHOOL LOGO](https://thealtschool.com/wp-content/uploads/2022/01/cropped-AltSchool-Logo-1.png)
 
-## Recommended IDE Setup
+## **Table Of Content**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [**Exam Description**](#exam-description)
+- [**Exam Objectives**](#exam-objectives)
+- [**Solution**](#solution)
 
-## Customize configuration
+## **Exam Description**
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This is my code repo for my Trial at solving the [Altschool Africa School of Engineering ](https://thealtschool.com/software-engineering/) third semester exam.
 
-## Project Setup
+## **Exam Objectives**
 
-```sh
-npm install
-```
+- Create a new vue js application then using the GitHub API, fetch your GitHub repositories using this endpoint https://api.github.com/users/{{USERNAME}}/repos. show a page with a list of all your repositories on GitHub(the page should have some form of pagination). Then create another page showing data for a single repo clicked from the list of repos using nested routes. Make sure to implement a wildcard route to catch 404 pages. NB: Good UI and Designs are important.
 
-### Compile and Hot-Reload for Development
+  > Below is the link to my solution on the task.
 
-```sh
-npm run dev
-```
+### **Solution**
 
-### Compile and Minify for Production
+[View Third Semester Exam project](https://altsch-vue-exam.vercel.app/)
 
-```sh
-npm run build
-```
+https://altsch-vue-exam.vercel.app/
