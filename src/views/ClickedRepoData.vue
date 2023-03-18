@@ -10,16 +10,18 @@
             class="h-14 w-14 rounded-full"
             :alt="repo.name"
           />
-          <h2 class="text-xl font-semibold">
+          <h2 class="md:text-xl font-bold text-sm">
             {{ repo.name }}
             <small class="text-sm font-light">({{ repo.visibility }})</small>
           </h2>
         </div>
-        <p class="italic py-2">
+        <p class="italic py-2 text-sm md:text-base">
           {{ repo.description ? repo.description : "No description added yet" }}
         </p>
 
-        <p class="py-1">Language: {{ repo.language }}</p>
+        <p class="py-1">
+          Language: {{ repo.language ? repo.language : "No language Set" }}
+        </p>
 
         <div class="py-1">
           <a :href="repo.html_url" target="_blank" rel="noopener noreferrer"

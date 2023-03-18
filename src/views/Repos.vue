@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-b from-gray-900 to-gray-800 mt-0">
+  <div class="bg-gradient-to-b from-gray-900 to-gray-800 mt-0 overflow-hidden">
     <div class="py-6">
       <div
         class="bg-gray-800/50 border-2 border-gray-100/10 mb-5 mx-auto p-4 sm:w-[50%] w-[80%] rounded shadow-md text-cyan-100"

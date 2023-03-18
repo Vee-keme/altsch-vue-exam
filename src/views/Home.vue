@@ -14,7 +14,7 @@
       </button>
     </router-link>
   </div>
-  <div class="z-50 absolute bottom-0 right-0 sm:hidden md:block">
+  <div class="z-50 absolute bottom-0 right-0 sm:hidden md:block lg:block">
     <img :src="img" alt="img" />
   </div>
 </template>
