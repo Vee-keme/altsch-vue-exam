@@ -2,7 +2,7 @@
   <div class="bg-gradient-to-b from-gray-900 to-gray-700 h-screen">
     <div class="h-[88vh] flex items-center flex-col justify-around md:flex-row">
       <div
-        class="flex-col p-6 rounded-lg sm:w-[50%] w-[80%] bg-gray-800/50 border-2 border-gray-100/10 text-cyan-100 shadow-2xl"
+        class="flex-col p-6 rounded-lg sm:w-[85%] md:w-[60%] bg-gray-800/50 border-2 border-gray-100/10 text-cyan-100 shadow-2xl"
       >
         <div class="flex justify-between">
           <img
