@@ -4,6 +4,9 @@
     class="bg-gray-900 text-gray-100 py-3.5 px-6 shadow md:flex justify-between items-center"
   >
     <div class="flex items-center">
+      <span>
+        <img :src="logo" alt="logo" class="w-10 h-10" />
+      </span>
       <span class="text-green-500 text-xl mr-1">
         <p>repoApp</p>
       </span>
@@ -39,6 +42,7 @@
 <script>
 import { ref } from "vue";
 import Button from "./Button.vue";
+import logo from "@/assets/RA.png";
 
 export default {
   name: " NewNavbar",
@@ -53,7 +57,7 @@ export default {
     function toggleMenu() {
       open.value = !open.value;
     }
-    return { open, toggleMenu };
+    return { open, toggleMenu, logo };
   },
 };
 </script>

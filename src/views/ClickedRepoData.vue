@@ -1,16 +1,8 @@
 <template>
   <div class="bg-gradient-to-b from-gray-900 to-gray-700 h-screen">
-    <div class="h-[88vh] flex justify-around items-center">
-      <router-link to="/repos">
-        <button
-          class="text-cyan-100 border rounded-md px-4 py-1 m-2 hover:bg-cyan-100 hover:text-gray-800 animate-pulse"
-        >
-          ← Back to Repos
-        </button>
-      </router-link>
-
+    <div class="h-[88vh] flex items-center flex-col justify-around md:flex-row">
       <div
-        class="flex-col p-6 rounded-lg w-[50%] bg-gray-800/50 border-2 border-gray-100/10 text-cyan-100 shadow-2xl"
+        class="flex-col p-6 rounded-lg sm:w-[50%] w-[80%] bg-gray-800/50 border-2 border-gray-100/10 text-cyan-100 shadow-2xl"
       >
         <div class="flex justify-between">
           <img
@@ -33,7 +25,6 @@
           <a :href="repo.html_url" target="_blank" rel="noopener noreferrer"
             >Github LInk</a
           >
-          <!-- <font-awesome-icon icon="fa-light fa-link" />Github Link</a -->
 
           <a
             :href="repo.homepage ? repo.homepage : '#'"
@@ -50,6 +41,14 @@
         <!-- <h3>ive been clicked {{ $route.params.name }}</h3> -->
         <!-- <p>{{ repo.id }}</p> -->
       </div>
+
+      <router-link to="/repos">
+        <button
+          class="text-cyan-100 border rounded-md px-4 py-1 m-2 hover:bg-cyan-100 hover:text-gray-800 animate-pulse"
+        >
+          ← Back to Repos
+        </button>
+      </router-link>
     </div>
   </div>
 </template>

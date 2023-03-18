@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex justify-center flex-col bg-gradient-to-b from-gray-900 to-gray-800 h-[89vh]"
+    class="flex justify-center flex-col bg-gradient-to-b from-gray-900 to-gray-800 h-[89vh] overflow-hidden"
   >
-    <div class="text-cyan-100 text-9xl m-2">
+    <div class="text-cyan-100 m-2 text-9xl">
       <p class="">REPOSAPP</p>
       <p>VIEW MY REPOS</p>
     </div>
@@ -14,7 +14,7 @@
       </button>
     </router-link>
   </div>
-  <div class="z-50 absolute bottom-0 right-0">
+  <div class="z-50 absolute bottom-0 right-0 sm:hidden md:block">
     <img :src="img" alt="img" />
   </div>
 </template>
