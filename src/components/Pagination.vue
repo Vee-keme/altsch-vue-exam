@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto my-10 flex items-center justify-center">
     <button
-      class="border rounded p-2 m-2"
+      class="border rounded p-2 m-2 text-cyan-100"
       @click="paginate(currentPage - 1)"
       :disabled="currentPage === 1"
     >
@@ -9,13 +9,13 @@
     </button>
 
     <span v-for="i in pageNumbers" :key="i" @click="paginate(i)">
-      <button class="border rounded p-2 m-2">
+      <button class="border rounded p-2 m-2 text-cyan-100">
         {{ i }}
       </button>
     </span>
 
     <button
-      class="border rounded p-2 m-2"
+      class="border rounded p-2 m-2 text-cyan-100"
       @click="paginate(currentPage + 1)"
       :disabled="currentPage === Math.ceil(repos.length / reposPerPage)"
     >

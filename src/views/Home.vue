@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center flex-col bg-gradient-to-b from-gray-900 to-gray-800 h-screen"
+    class="flex justify-center flex-col bg-gradient-to-b from-gray-900 to-gray-800 h-[89vh]"
   >
     <div class="text-cyan-100 text-9xl m-2">
       <p class="">REPOSAPP</p>
@@ -8,7 +8,7 @@
     </div>
     <router-link to="/repos">
       <button
-        class="text-cyan-100 border rounded-md px-4 py-1 m-2 hover:bg-cyan-100 hover:text-gray-800 hover:text-lg"
+        class="text-cyan-100 border rounded-md px-4 py-1 m-2 hover:bg-cyan-100 hover:text-gray-800 hover:text-lg animate-bounce"
       >
         To repos →
       </button>

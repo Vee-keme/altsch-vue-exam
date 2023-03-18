@@ -60,7 +60,7 @@ export default {
 
 <style lang="css">
 #nav .vue-active-link {
-  color: red;
-  text-decoration: underline;
+  color: rgb(207 250 254);
+  border-bottom: 3px solid rgb(207 250 254);
 }
 </style>

@@ -1,8 +1,52 @@
 <template>
-  <div>
-    <h3>ive been clicked {{ $route.params.name }}</h3>
-    <p>{{ repo.id }}</p>
-    <p>{{ repo.name }}</p>
+  <div class="h-[88vh] flex justify-around items-center">
+    <router-link to="/repos">
+      <button
+        class="text-gray-800 border rounded-md px-4 py-1 m-2 hover:bg-cyan-100 hover:text-gray-800"
+      >
+        ← Back to Repos
+      </button>
+    </router-link>
+
+    <div class="flex-col border p-6 rounded-lg w-[50%]">
+      <div class="flex justify-between">
+        <img
+          :src="repo.owner.avatar_url"
+          class="h-14 w-14 rounded-full"
+          :alt="repo.name"
+        />
+        <h2 class="text-xl font-semibold">
+          {{ repo.name }}
+          <small class="text-sm font-light">({{ repo.visibility }})</small>
+        </h2>
+      </div>
+      <p class="italic py-2">
+        {{ repo.description ? repo.description : "No description added yet" }}
+      </p>
+
+      <p class="py-1">Language: {{ repo.language }}</p>
+
+      <div class="py-1">
+        <a :href="repo.html_url" target="_blank" rel="noopener noreferrer"
+          >Github LInk</a
+        >
+        <!-- <font-awesome-icon icon="fa-light fa-link" />Github Link</a -->
+
+        <a
+          :href="repo.homepage ? repo.homepage : '#'"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hosted Link
+        </a>
+      </div>
+
+      <small class="py-1">
+        <p class="">Updated {{ new Date(repo.updated_at).toDateString() }}</p>
+      </small>
+      <!-- <h3>ive been clicked {{ $route.params.name }}</h3> -->
+      <!-- <p>{{ repo.id }}</p> -->
+    </div>
   </div>
 </template>
 
