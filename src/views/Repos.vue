@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gradient-to-b from-gray-900 to-gray-800 mt-0">
-    <div>
+    <div class="py-6">
       <div
-        class="border-2 border-gray-100/10 mb-5 mx-auto p-4 sm:w-[50%] w-[80%] rounded shadow-md text-cyan-100"
+        class="bg-gray-800/50 border-2 border-gray-100/10 mb-5 mx-auto p-4 sm:w-[50%] w-[80%] rounded shadow-md text-cyan-100"
         v-for="repo in slicedRepos"
         :key="repo.id"
       >
@@ -37,7 +37,28 @@
 
     <div v-if="loading">Loading..........</div>
     <div v-else-if="err">{{ err }}</div>
-    <div v-else-if="!repos.length">No repositories found.</div>
+    <div v-else-if="!repos.length" class="flex justify-center items-center">
+      <svg
+        class="animate-spin h-5 w-5 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          class="opacity-25"
+          cx="100"
+          cy="100"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        ></path>
+      </svg>
+    </div>
 
     <Pagination
       :repos="repos"

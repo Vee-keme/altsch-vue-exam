@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto my-10 flex items-center justify-center">
+  <div class="mx-auto pb-10 flex items-center justify-center">
     <button
       class="border rounded p-2 m-2 text-cyan-100"
       @click="paginate(currentPage - 1)"
