@@ -36,7 +36,6 @@
       <Button> </Button>
     </ul>
   </div>
-  <!-- <router-view></router-view> -->
 </template>
 
 <script>

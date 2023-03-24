@@ -40,8 +40,6 @@
         <small class="py-1">
           <p class="">Updated {{ new Date(repo.updated_at).toDateString() }}</p>
         </small>
-        <!-- <h3>ive been clicked {{ $route.params.name }}</h3> -->
-        <!-- <p>{{ repo.id }}</p> -->
       </div>
 
       <router-link to="/repos">
@@ -75,7 +73,6 @@ export default {
       `https://api.github.com/repos/Vee-keme/${this.repoId}`
     );
     this.repo = await reponse.json();
-    // console.log(this.repo);
   },
 };
 </script>

@@ -67,7 +67,6 @@
       :pageNumbers="pageNumbers"
       :paginate="paginate"
     />
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -95,7 +94,6 @@ export default {
         const data = await res.json();
         repos.value = data;
         totalPages.value = Math.ceil(repos.value.length / perPage.value);
-        // console.log(repos.value.length, perPage.value, totalPages.value);
       };
       fetchRepos();
     } catch (err) {
@@ -128,8 +126,6 @@ export default {
         i++
       ) {
         pageNumbers.push(i);
-        // console.log(repos.value.length, reposPerPage.value);
-        // console.log(pageNumbers);
       }
       return pageNumbers;
     });
